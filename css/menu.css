@@ -1,0 +1,28 @@
+#burger {
+    transform: none;
+ }
+ 
+ #chk_burger {
+    display: none;
+ }
+ 
+ #chk_burger:checked ~ .menu {
+    transform: translatey(0);
+ }
+ 
+ #chk_burger:checked 
+ 
+ .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transform: translateY (100%);
+    transition: transform .5s;
+ }
+ 
+ .menu a {
+    display: block;
+    color: rgb(0, 0, 0);
+ }
